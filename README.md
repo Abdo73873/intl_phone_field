@@ -42,25 +42,7 @@ IntlPhoneField(
 )
 ```
 
-Use `initialCountryCode` to set an initial Country Code.
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-Comment on Issue or Pull Request, asking @all-contributors to add a contributor:
-
-```shell
-@all-contributors please add @<username> for <contributions>
-```
-
-**\<contributions>**: See the [Emoji Key (Contribution Types Reference)](https://allcontributors.org/docs/en/emoji-key) for a list of valid contribution types.
-
-## Maintainers
-- [Vansh Goel](https://github.com/vanshg395/)
-- [Alex N'Guessan](https://github.com/marcaureln/)
 
 ## ✅ Improvements in This Fork
 
