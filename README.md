@@ -1,4 +1,4 @@
-# International Phone Field Package
+ # International Phone Field Package
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -68,6 +68,35 @@ Comment on Issue or Pull Request, asking @all-contributors to add a contributor:
 ## Maintainers
 - [Vansh Goel](https://github.com/vanshg395/)
 - [Alex N'Guessan](https://github.com/marcaureln/)
+
+## ✅ Improvements in This Fork
+
+This fork of [`intl_phone_field`](https://pub.dev/packages/intl_phone_field) includes a **fix for the `validator` callback**, which was previously not being triggered when used inside a `Form`.
+
+---
+
+### 🔧 What's fixed?
+
+- The `validator` function now works correctly when `IntlPhoneField` is placed inside a `Form` and `FormState.validate()` is called.
+- Error messages are displayed properly below the input field.
+
+---
+
+### 📦 How to use
+
+```dart
+IntlPhoneField(
+  validator: (phone) {
+    if (phone == null || phone.number.isEmpty) {
+      return 'Please enter a valid phone number';
+    }
+    return null;
+  },
+  // other properties...
+)
+```
+
+
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
